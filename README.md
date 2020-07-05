@@ -130,8 +130,8 @@ php artisan serve
 > *http(s)://example.com/admin/login*
 
 ~~~
-email:admin@example.com
-password:admin123
+email:admin@ascendtis.com
+password:asgard
 ~~~
 
 **How to log in as customer:**

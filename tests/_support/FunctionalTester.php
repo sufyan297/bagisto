@@ -43,7 +43,7 @@ class FunctionalTester extends \Codeception\Actor
         $I = $this;
 
         if (! $admin) {
-            $admin = $I->grabRecord(Admin::class, ['email' => 'admin@example.com']);
+            $admin = $I->grabRecord(Admin::class, ['email' => 'admin@ascendtis.com']);
         }
 
         if (! $admin) {

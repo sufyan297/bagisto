@@ -32,8 +32,8 @@ class AcceptanceTester extends \Codeception\Actor
         $I = $this;
         $I->amOnPage('/admin');
         $I->see('Sign In');
-        $I->fillField('email', 'admin@example.com');
-        $I->fillField('password', 'admin123');
+        $I->fillField('email', 'admin@ascendtis.com');
+        $I->fillField('password', 'asgard');
         $I->dontSee('The "Email" field is required.');
         $I->dontSee('The "Password" field is required.');
         $I->click('Sign In');
