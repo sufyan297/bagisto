@@ -97,7 +97,7 @@ return [
             'footer-left-content' => 'Conteúdo Rodapé Esquerdo',
             'subscription-content' => 'Conteúdo da Barra de Inscrição',
             'sidebar-categories' => 'Sidebar Categories',
-            'footer-left-raw-content' => '<p>We love to craft softwares and solve the real world problems with the binaries. We are highly committed to our goals. We invest our resources to create world class easy to use softwares and applications for the enterprise business with the top notch, on the edge technology expertise.</p>',
+            'footer-left-raw-content' => '<p>Ascendtis IT Solutions is an organization comprising of youthful and dynamic team that is enthusiastic to endeavor IT sector towards another path.</p>',
             'slider-path' => 'Caminho do Slider',
             'category-logo' => 'Logo da Categoria',
             'product-policy' => 'Política de Produto',

@@ -11,7 +11,7 @@
                         <div id="app-settings">
                             <div class="form-group" id="app_name">
                                 <label for="application_name" class="required">Application Name</label>
-                                <input type= "text" name= "app_name" id="application_name" class="form-control" value="Bagisto_" data-validation="required length" 
+                                <input type= "text" name= "app_name" id="application_name" class="form-control" value="Ascendtis_" data-validation="required length" 
                                 data-validation-length="max20">
                             </div>
                             
@@ -24,8 +24,9 @@
                             <div class="form-group" id="app_currency">
                                 <label for="application_currency" class="required">Default Currency</label>
                                 <select name="app_currency" id="application_currency" class="form-control" data-validation="required length" data-validation-length="max50">
+                                    <option value="INR" selected>Indian Rupees</option>
                                     <option value="EUR">Euro</option>
-                                    <option value="USD" selected>US Dollar</option>
+                                    <option value="USD">US Dollar</option>
                                 </select>
                             </div>
                             
@@ -36,7 +37,6 @@
                                     date_default_timezone_set('UTC');
                                     $tzlist = DateTimeZone::listIdentifiers(DateTimeZone::ALL);
                                     $current = date_default_timezone_get();
-                                    
                                     foreach($tzlist as $key => $value) {
                                         if(!$value === $current) {
                                             echo "<option value='$value' selected>" . $value . "</option>";
