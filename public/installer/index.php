@@ -2,7 +2,7 @@
     $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
     $cssUrl = $actual_link .'/'. 'CSS/style.css';
-    $logo =  $actual_link .'/'. 'Images/logo.svg';
+    $logo =  $actual_link .'/'. 'Images/logo.png';
     $jsURL = $actual_link .'/'. 'js/script.js';
 ?>
 <!DOCTYPE html>
@@ -141,7 +141,7 @@
         ?>
 
         <div style="margin-bottom: 5px; margin-top: 30px; text-align: center;">
-            <a href="https://bagisto.com/" target="_blank">Bagisto</a> a community project by <a href="https://webkul.com/" target="_blank">Webkul</a>
+            <a href="https://demostore.ascendtis.com/" target="_blank">Bagisto</a> Reloaded by <a href="https://ascendtis.com/" target="_blank">Ascendtis IT Solutions</a>
         </div>
 
         <script src="<?php echo $jsURL; ?>" ></script>
