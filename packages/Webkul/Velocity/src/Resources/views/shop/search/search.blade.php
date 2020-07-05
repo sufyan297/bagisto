@@ -11,6 +11,16 @@
         .category-container {
             min-height: unset;
         }
+
+        .toolbar-wrapper .col-4:first-child {
+            display: none !important;
+        }
+
+        .toolbar-wrapper .col-4:last-child {
+            right: 0;
+            position: absolute;
+        }
+
         
         @media only screen and (max-width: 992px) {
             .main-content-wrapper .vc-header {
@@ -41,7 +51,7 @@
             @endif
 
             @if (! $results)
-                <h1 class="fw6 col-12">{{  __('shop::app.search.no-results') }}</h1>
+                <h1 class="fw6 col-12">{{ __('shop::app.search.no-results') }}</h1>
             @else
                 @if ($results->isEmpty())
                     <h1 class="fw6 col-12">{{ __('shop::app.products.whoops') }}</h1>
@@ -108,14 +118,16 @@
             },
 
             created: function() {
-                this.searched_terms = localStorage.searched_terms.split('_');
+                if (localStorage.searched_terms && localStorage.searched_terms != '') {
+                    this.searched_terms = localStorage.searched_terms.split('_');
 
-                this.searched_terms = this.searched_terms.map(term => {
-                    return {
-                        name: term,
-                        slug: term.split(' ').join('+'),
-                    }
-                });
+                    this.searched_terms = this.searched_terms.map(term => {
+                        return {
+                            name: term,
+                            slug: term.split(' ').join('+'),
+                        }
+                    });
+                }
             }
         });
     </script>
